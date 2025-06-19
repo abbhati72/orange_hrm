@@ -41,6 +41,7 @@ class Test_Login_Class:
             path = "D:/CRED_2025/CRE_2025/pythonProject2/ScreenShots/pass_test_login_config_read_T001" + scr_sts_datetime + ".png" + ""
             self.driver.save_screenshot(path)
             allure.attach.file(path, name="User login Successfully", attachment_type=allure.attachment_type.PNG)
+            logger.info("inside test_login_config_read executing test case T001 pass")
             assert True
 
         else:
@@ -52,7 +53,7 @@ class Test_Login_Class:
             path = "D:/CRED_2025/CRE_2025/pythonProject2/ScreenShots/fail_test_login_config_read_T001" + scr_sts_datetime + ".png" + ""
             self.driver.save_screenshot(path)
             allure.attach.file(path, name="User login Successfully", attachment_type=allure.attachment_type.PNG)
-
+            logger.info("inside test_login_config_read executing test case T001 fail")
             assert False
 
 
@@ -68,12 +69,12 @@ class Test_Login_Class:
             path = "D:/CRED_2025/CRE_2025/pythonProject2/ScreenShots/pass_test_title_Check_T002" + scr_sts_datetime + ".png" + ""
             self.driver.save_screenshot(path)
             allure.attach.file(path, name="Title check Successfully", attachment_type=allure.attachment_type.PNG)
-
+            logger.info("executing test_title_Check_T002 pass")
             assert True
         else:
             scr_sts_datetime = datetime.now().strftime("%Y%m%d_%H%M%S")
             path = "D:/CRED_2025/CRE_2025/pythonProject2/ScreenShots/fail_test_title_Check_T002" + scr_sts_datetime + ".png" + ""
             self.driver.save_screenshot(path)
             allure.attach.file(path, name="Title check unsuccessfully", attachment_type=allure.attachment_type.PNG)
-
+            logger.info("executing test_title_Check_T002 fail")
             assert False
