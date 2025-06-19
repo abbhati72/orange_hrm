@@ -1,0 +1,1 @@
+pytest -v  -n auto --html=HTMLReports/My_Report.html 
