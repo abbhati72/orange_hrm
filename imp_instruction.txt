@@ -1,0 +1,19 @@
+II.
+Install Required Libraries:
+o Open your terminal or command prompt and run the following commands:
+▪ pip install selenium
+▪ pip install pytest
+▪ pip install pytest-html
+▪ pip install pytest-xdist
+▪ pip install openpyxl
+▪ pip install allure-pytest
+▪ pip install pytest-rerunfailures
+▪ pip install pytest-sugar
+▪ pip install pytest-faker
+▪ pip install pytest-cov
+
+
+pip install selenium pytest pytest-html pytest-xdist openpyxl pytest-cov allure-pytest pytest-rerunfailures pytest-sugar pytest-faker
+
+pip install selenium pytest pytest-html pytest-xdist openpyxl pytest-cov
+pip install allure-pytest pytest-rerunfailures pytest-sugar pytest-faker
